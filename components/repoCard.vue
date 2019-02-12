@@ -1,9 +1,15 @@
 <template>
-    <div class="card">
-        <a :href=gitRepo.url><h1 style="text-transform: capitalize;">{{gitRepo.name}}</h1></a>
-        <p>{{gitRepo.author}}</p>
-        <p>Stars: {{gitRepo.stars}}</p>
-        <p>Description: {{gitRepo.description}}</p>
+    <div class="card container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <a :href=gitRepo.url class="card-title"><h1>{{gitRepo.name}}</h1></a>
+                <p class="card-author">brought to you by: <span class="card-author name">{{gitRepo.author}}</span></p>
+            </div>
+            <div class="col-md-6">
+                <p class="card-stars">Stars: <span class="card-stars starsVal">{{gitRepo.stars}}</span></p>
+                <p class="card-description">Description: <span class="card-description descriptionVal">{{gitRepo.description}}</span></p>
+            </div>
+        </div>
     </div>
 </template>
 

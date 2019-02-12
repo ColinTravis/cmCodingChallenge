@@ -2,9 +2,6 @@
 // VARIABLES
 // =============================================================================
 
-// Body
-$body-bg: #f5f8fa;
-
 // Monotones
 $white: #ffffff;
 $off-white: #f0f1f1;
@@ -15,6 +12,8 @@ $grey: #707070;
 $light-grey: #9e9e9e;
 $dark-grey: #F7F7F7;
 
+// Body
+$body-bg: $off-white;
 
 // Brands
 $bold-yellow: #F4C92C;
