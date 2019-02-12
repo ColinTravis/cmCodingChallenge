@@ -3,7 +3,7 @@
         <div class="container repo_list">
             <div class="col-md-12 repo_sort row">
 
-                <button class="filter_button" v-on:click="sortOrder = 'date'">Appearance</button>
+                <button class="filter_button" v-on:click="sortOrder = 'date'">By Appearance</button>
                 <div v-if="sortOrder === 'starsDesc'" class="ml-3">
                     <button class="filter_button" v-on:click="sortOrder = 'starsAsc'">Most Stars</button>
                 </div>
