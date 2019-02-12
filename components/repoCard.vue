@@ -6,7 +6,7 @@
                 <p class="card-author">brought to you by: <span class="card-author name">{{gitRepo.author}}</span></p>
             </div>
             <div class="col-md-6">
-                <p class="card-stars">Stars: <span class="card-stars starsVal">{{gitRepo.stars}}</span></p>
+                <p class="card-stars">⭐: <span class="card-stars starsVal">{{gitRepo.stars}}</span></p>
                 <p class="card-description">Description: <span class="card-description descriptionVal">{{gitRepo.description}}</span></p>
             </div>
         </div>

@@ -2,7 +2,6 @@
   <div class="page_container">
       <page-header/>
       <nuxt class="container-fluid"/>
-      <page-footer/>
   </div>
 </template>
 
@@ -13,8 +12,7 @@
 
     export default {
         components: {
-            PageHeader,
-            PageFooter
+            PageHeader
         }
     }
 </script>
