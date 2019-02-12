@@ -2,41 +2,72 @@
 // HEADER NAVBAR STYLE
 // =============================================================================
 
-.logo {
-  max-width: 20%;
-}
-
-.nav_wrapper {
-  background-color: $white;
+.navbar-container {
   margin-bottom: 2rem;
-}
+  color: $black;
+  font-family: 'Overpass Mono', monospace;
 
-#headerNavBar .navbar-nav .nav-item {
-  margin-right: 2.1rem;
-  @media screen and (min-width: 320px){
-    margin: 0.8rem 0;
+  .navbar {
+    min-height: 5rem;
   }
-  @media screen and (min-width: 992px){
-    margin: 0 2.1rem 0 0;
-  }
-  &:last-child {
-    margin-right: 0;
-  }
-}
 
-.navbar-toggler {
-  border: 1px solid $light-grey !important;
-  padding: 0.75rem !important;
-}
+  #logo {
+    vertical-align: middle;
+  }
+  .navbar-brand {
+    margin-right: 4rem;
+    .brand-text {
+      text-transform: lowercase;
+      font-size: 2rem;
+      line-height: 2.2;
+      font-weight: 600;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 0 0 15px;
+      color: $black;
+      transition: color $ease;
 
-.navbar-toggler .icon-bar {
-    background-color: #888;
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-    margin-bottom: 5px;
-    &:last-of-type {
-      margin-bottom: 0;
+      &:hover {
+        color: $bold-yellow;
+      }
     }
+    b {
+      display: block;
+      font-size: 50%;
+      line-height: 1;
+    }
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    color: $black;
+    position: relative;
+    transition: color $ease-slow;
+    text-transform: uppercase;
+    &:hover {
+      color: $bold-blue;
+      &::after {
+        transform: scaleX(1);
+        border-color: $bold-blue;
+      }
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      border-bottom: solid 2px $white;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      -o-transform: scaleX(0);
+      transform: scaleX(0);
+      transition: all $ease-slow;
+    }
+  }
 }
+

@@ -1,9 +1,9 @@
 .page-enter-active {
-  animation: acrossIn .45s ease both;
+  animation: fadeUp .45s ease both;
 }
 
 .page-leave-active {
-  animation: acrossOut .65s ease both;
+  animation: fadeOut .65s ease both;
   #square {
     transition: all ease 2s;
     transform: scale(0);
@@ -11,7 +11,7 @@
   }
 }
 
-@keyframes acrossIn {
+@keyframes fadeUp {
   0% {
     opacity: 0;
     transform: translate3d(0, -3.5%, 0);
@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes acrossOut {
+@keyframes fadeOut {
   0% {
     opacity: 1;
     transform: translate3d(0, 0, 0);

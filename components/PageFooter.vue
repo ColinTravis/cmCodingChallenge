@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer class="container-fluid footer">
         <div>
             Footer Here
         </div>

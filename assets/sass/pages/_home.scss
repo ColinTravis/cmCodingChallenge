@@ -3,26 +3,3 @@
 // =============================================================================
 
 
-#header-masthead {
-  min-height: 360px;
-  margin-top: -2rem;
-  @include vertical-center(column);
-  background: url("/resources/assets/images/unsplash_placeholder.jpg") no-repeat center center;
-  background-size: cover;
-  margin-bottom: 2rem;
-}
-
-.overlay-box {
-  color: $white;
-  background-color: rgba($black, .67);
-  padding: 30px 40px;
-  h1 {
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-  p {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}

@@ -1,10 +1,8 @@
 <template>
-  <div class="flex flex-row justify-center w-screen">
-    <div class="overflow-hidden content flex flex-col p-4 md:p-8">
+  <div class="page_container">
       <page-header/>
-      <nuxt/>
+      <nuxt class="container-fluid"/>
       <page-footer/>
-    </div>
   </div>
 </template>
 
