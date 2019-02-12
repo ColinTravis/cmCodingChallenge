@@ -24,9 +24,10 @@
         name: "repoList",
         components: {RepoCard},
         async asyncData({app}) {
-            const {data} = await app.$axios.get("https://github-trending-api.now.sh/repositories")
+            const {data} = await app.$axios.get(process.env.baseUrl)
 
             return {
+                baseUrl: process.env.BASE_URL,
                 repos: data,
                 sortOrder: "date"
             }
