@@ -1,0 +1,32 @@
+// =============================================================================
+// BUTTONS
+// =============================================================================
+
+.filter_button {
+  margin-right: 1rem;
+  border-radius: 2rem;
+  padding: .8rem 1.2rem;
+  border: 0;
+  background: $bold-blue;
+  color: $white;
+  font-weight: 900;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.43);
+  transition: all .6s cubic-bezier(.25,.46,.45,.94);
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    background: $blue;
+  }
+  &:active {
+    transform: scale3d(1.01,1.01,1.01);
+    background: darken($blue, 18);
+    //transition: all $ease;
+  }
+}

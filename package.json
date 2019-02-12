@@ -1,0 +1,36 @@
+{
+  "name": "cm-challenge",
+  "version": "1.0.0",
+  "description": "Colle McVoy Coding Challenge",
+  "author": "Colin Travis",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "bootstrap": "^4.3.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "cross-env": "^5.2.0",
+    "gsap": "^2.0.2",
+    "jquery": "^3.3.1",
+    "nuxt": "^2.4.0",
+    "typeface-lato": "0.0.54",
+    "typeface-overpass-mono": "0.0.71"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "dotenv": "^6.2.0",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "marked": "^0.6.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0"
+  }
+}

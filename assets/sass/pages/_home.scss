@@ -1,0 +1,30 @@
+// =============================================================================
+// Home
+// =============================================================================
+
+.intro_container {
+  height: 65vh;
+}
+
+.intro_emoji {
+  font-size: 4.5rem;
+}
+
+.intro_title {
+  font-size: 4rem;
+  color: $bold-blue;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  transition: font-size $ease;
+  @media screen and (min-width: 320px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+#home_proceed {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
