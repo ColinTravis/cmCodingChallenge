@@ -19,7 +19,9 @@ module.exports = {
             {name: 'theme-color', content: '#0f0c96'}
         ],
         link: [
-            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+            {rel:"stylesheet", href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900'},
+            {rel:"stylesheet", href: 'https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700'}
         ]
     },
 
@@ -56,8 +58,8 @@ module.exports = {
     },
 
     css: [
-        '@/assets/sass/app.scss',
         '@/assets/sass/vendor.scss',
+        '@/assets/sass/app.scss',
     ],
 
     /*
