@@ -2,7 +2,7 @@
     <div class="card container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <a :href=gitRepo.url class="card-title"><h1>{{gitRepo.name}}</h1></a>
+                <a :href=gitRepo.url target="_blank" class="card-title"><h1>{{gitRepo.name}}</h1></a>
                 <p class="card-author">brought to you by: <span class="card-author name">{{gitRepo.author}}</span></p>
             </div>
             <div class="col-md-6">
