@@ -15,8 +15,8 @@ module.exports = {
             {charset: 'utf-8'},
             {name: 'viewport', content: 'width=device-width, initial-scale=1'},
             {hid: 'description', name: 'description', content: pkg.description},
-            {name: 'msapplication-TileColor', content: "#2d89ef"},
-            {name: 'theme-color', content: '#ff0000'}
+            {name: 'msapplication-TileColor', content: "#0f0c96"},
+            {name: 'theme-color', content: '#0f0c96'}
         ],
         link: [
             {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
@@ -26,7 +26,7 @@ module.exports = {
     /*
     ** Customize the progress-bar color
     */
-    loading: {color: '#fff'},
+    loading: {color: '#0f0c96'},
 
     /*
     ** Global CSS
@@ -37,7 +37,6 @@ module.exports = {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        {src: '~/plugins/vue-scroll-reveal', ssr: false},
     ],
 
     /*
@@ -58,6 +57,7 @@ module.exports = {
 
     css: [
         '@/assets/sass/app.scss',
+        '@/assets/sass/vendor.scss',
     ],
 
     /*

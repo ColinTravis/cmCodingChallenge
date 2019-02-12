@@ -1,61 +1,33 @@
 <template>
     <section>
-        <div class="">
-            <ul class="">
-                <a v-on:click="sortOrder = 'A-Z'" >A-Z</a><br>
-                <a v-on:click="sortOrder = 'Z-A'" >Z-A</a><br>
-                <a v-on:click="sortOrder = 'starsAsc'" >Stars ^</a><br>
-                <a v-on:click="sortOrder = 'starsDesc'" >Stars down</a>
-                <li v-for="(repo, key) in sort(sortOrder)" :key="key">
-                    <h1 style="text-transform: capitalize;">{{repo.name}}</h1>
-                    <p>{{repo.author}}</p>
-                    <p>Stars: {{repo.stars}}</p>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="intro_container row">
+                <div class="text-center col-md-12 align-self-center">
+                    <span class="intro_emoji">📃 💻 🔥</span>
+                    <h1 class="intro_title">This Small App Loads a List of Trending Github Repos!</h1>
+
+
+                    <nuxt-link to="/repolist"><button class="filter_button">Load Those In!</button></nuxt-link>
+                </div>
+            </div>
         </div>
+
     </section>
 </template>
 
 <script>
-    export default {
-        async asyncData({app}) {
-            const {data} = await app.$axios.get("https://github-trending-api.now.sh/repositories")
 
-            return {
-                repos: data,
-                sortOrder: "A-Z"
-            }
-        },
-        computed: {
-            orderedListOptions: function () {
+    export default {
+
+        methods: {
+            head() {
                 return {
-                    "A-Z": () => {
-                        return this.repos.slice().sort().reverse()
-                    },
-                    "Z-A": () => {
-                        return this.repos.slice().sort()
-                    },
-                    "starsAsc": () => {
-                        return this.repos.slice().sort((a,b) => {return b.stars - a.stars});
-                    },
-                    "starsDesc": () => {
-                        return this.repos.slice().sort((a,b) => {return b.stars - a.stars}).reverse();
-                    },
+                    title: "Home",
+                    meta: [
+                        {hid: 'description', name: 'description'},
+                    ]
                 }
             },
-        },
-        methods: {
-            sort: function (sortOrder) {
-                return this.orderedListOptions[sortOrder]()
-            },
-        },
-        head () {
-            return {
-                title: "Repos",
-                meta: [
-                    { hid: 'description', name: 'description' },
-                ]
-            }
         }
     }
 
