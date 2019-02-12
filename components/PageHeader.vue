@@ -9,10 +9,10 @@
             <div class="" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <nuxt-link to="repolist" class="nav-link">Repo List</nuxt-link>
+                        <nuxt-link to="/repolist" class="nav-link">Repo List</nuxt-link>
                     </li>
                     <li class="nav-item">
-                        <nuxt-link to="about" class="nav-link">About</nuxt-link>
+                        <nuxt-link to="/about" class="nav-link">About</nuxt-link>
                     </li>
                 </ul>
             </div>
