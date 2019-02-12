@@ -58,7 +58,6 @@ module.exports = {
     },
 
     css: [
-        '@/assets/sass/vendor.scss',
         '@/assets/sass/app.scss',
     ],
 
