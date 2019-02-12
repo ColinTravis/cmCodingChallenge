@@ -7,7 +7,9 @@
                     <h1 class="intro_title">This Small App Loads a List of Trending Github Repos!</h1>
 
 
-                    <nuxt-link to="/repolist"><button class="filter_button">Load Those In!</button></nuxt-link>
+                    <nuxt-link to="/repolist">
+                        <button class="filter_button">Load Those In!</button>
+                    </nuxt-link>
                 </div>
             </div>
         </div>
@@ -18,17 +20,10 @@
 <script>
 
     export default {
-
-        methods: {
-            head() {
-                return {
-                    title: "Home",
-                    meta: [
-                        {hid: 'description', name: 'description'},
-                    ]
-                }
-            },
-        }
+        name: "home",
+        head: {
+            title: 'Home'
+        },
     }
 
 </script>

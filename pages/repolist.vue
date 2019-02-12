@@ -2,6 +2,7 @@
     <section>
         <div class="container repo_list">
             <div class="col-md-12 repo_sort row">
+
                 <button class="filter_button" v-on:click="sortOrder = 'date'">Appearance</button>
                 <div v-if="sortOrder === 'starsDesc'" class="ml-3">
                     <button class="filter_button" v-on:click="sortOrder = 'starsAsc'">Most Stars</button>
@@ -20,6 +21,7 @@
     import RepoCard from "../components/repoCard";
 
     export default {
+        name: "repoList",
         components: {RepoCard},
         async asyncData({app}) {
             const {data} = await app.$axios.get("https://github-trending-api.now.sh/repositories")
@@ -53,14 +55,9 @@
             sort: function (sortOrder) {
                 return this.orderedListOptions[sortOrder]()
             },
-            head() {
-                return {
-                    title: "Repos",
-                    meta: [
-                        {hid: 'description', name: 'description'},
-                    ]
-                }
-            },
+        },
+        head: {
+            title: 'Repo List'
         }
     }
 
